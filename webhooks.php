@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			if($event['type'] == 'message' && $event['message'] == "whoami"){
+			if($event['message'] == 'whoami'){
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
